@@ -1,101 +1,322 @@
-import Image from "next/image";
+
+import { FaCog, FaGraduationCap,  FaPhone, FaUser } from "react-icons/fa";
+import { FaBuildingColumns } from "react-icons/fa6";
+import { MdEmail, MdGroup } from "react-icons/md";
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="bg-gray-700 w-full flex">
+        <div>
+      {/* first section{} */}
+      <div >
+        <div className="bg-slate-900 w-80 py-10 ml-40 mt-5">
+          <div>
+          <div className="flex justify-center items-center">
+            <div className="w-48 h-48 bg-gray-300 rounded-full border-4 border-gray-400 flex justify-center items-center">
+              <div className="w-44 h-44 bg-gray-400 rounded-full border-4 border-gray-700 flex justify-center items-center">
+                <h2 className="font-serif text-center text-xl">Your Photo Here</h2>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1 className="text-gray-200 text-2xl font-bold mx-[60px] mt-3">NAME SURNAME</h1>
+            <h2 className="text-gray-200 text-xl font-medium mx-[90px]">Web Developer</h2>
+          </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          {/* Profile Section */}
+          <div className="mx-8 mt-10 flex ">
+            <div className="bg-white p-[7px] rounded-full flex justify-center items-center">
+              <FaUser size={25} className="text-slate-900" />
+            </div>
+            <h2 className="mx-5 text-gray-200 font-medium text-xl flex justify-center items-center">PROFILE</h2>
+          </div>
+          <p className="h-1 w-[215px] bg-slate-100 rounded-full mx-[92px]"></p>
+          <p className="ml-8 text-slate-100 text-start mt-5">
+            Lorem ipsum dolor sit ullam, amet consectetur adipisicing. Eaque sunt quibusdam nulla elit repellendus sit.
+          </p>
+
+          {/* Phone Section */}   
+          <div className="mx-8 mt-10 flex ">
+            <div className="bg-white p-[7px] rounded-full flex justify-center items-center">
+              <FaPhone size={25} className="text-slate-900" />
+            </div>
+            <h2 className="mx-5 text-gray-200 font-medium text-xl flex justify-center items-center">PHONE</h2>
+          </div>
+          <p className="h-1 w-[215px] bg-slate-100 rounded-full mx-[92px]"></p>
+          <p className="text-white mt-5">
+            <Link href="tel:+11234567890" className="text-white block w-40 ml-8">+1 (123) 456-7890</Link>
+            <Link href="tel:+447123456789" className="text-white block w-40 ml-8">+44 7123 456789</Link>
+          </p>
+
+          {/* Email Section */}
+          <div className="mx-8 mt-10 flex">
+            <div className="bg-white p-[7px] rounded-full flex justify-center items-center">
+              <MdEmail size={25} className="text-slate-900" />
+            </div>
+            <h2 className="mx-5 text-gray-200 font-medium text-xl flex justify-center items-center">EMAIL</h2>
+          </div>
+          <p className="h-1 w-[215px] bg-slate-100 rounded-full mx-[92px]"></p>
+          <p className="w-40 ml-8 justify-start mt-5">
+            <Link href="mailto:example1@email.com" className="text-white block">example1@email.com</Link>
+            <Link href="mailto:example2@email.com" className="text-white block">example2@email.com</Link>
+          </p>
+
+          {/* Reference Section */}
+          <div className="mx-8 mt-10 flex ">
+            <div className="bg-white p-[7px] rounded-full flex justify-center items-center">
+              <MdGroup size={25} className="text-slate-900" />
+            </div>
+            <h2 className="mx-5 text-gray-200 font-medium text-xl flex justify-center items-center">REFERENCE</h2>
+          </div>
+          <p className="h-1 w-[215px] bg-slate-100 rounded-full mx-[92px] "></p>
+          <div className="mb-6 ml-8 text-slate-100 text-start mt-5">
+            <p className="font-bold text-white">John Doe</p>
+            <p className="text-white">Senior Developer | XYZ Corporation</p>
+            <p className="text-white">Email: <Link href="mailto:johndoe@example.com" className="text-gray-300">johndoe@example.com</Link></p>
+            <p className="text-white">Phone: <Link href="tel:+11234567890" className="text-gray-300">+1 (123) 456-7890</Link></p>
+            <p className="text-white">Relationship: Former Manager</p>
+          </div>
+     </div>
+          
+     </div>
     </div>
+
+
+    </div>
+
+
+
+
+
+
+
+  {/* Additional sections here */}
+  <div>
+          <div className="mt-5 bg-white w-[600px] ml-0 pt-3 pb-6">
+  <div className="flex items-center">
+    <div className="bg-slate-900 ml-14 p-2 rounded-full flex items-center justify-center">
+      <FaGraduationCap size={25} className="text-white" />
+    </div>
+    <h2 className="text-slate-900 mx-3 text-xl font-bold">EDUCATION</h2>
+  </div>
+  <div className="h-[2px] w-[470px] bg-slate-900 rounded-full mx-[107px] my-2"></div>
+
+  {/* First Education Entry */}
+  <div className="flex items-start mt-3">
+    <div className="flex items-start space-x-3">
+      <span className="text-gray-700 ml-20">2019 - 2023</span>
+      <div>
+        <p className="text-slate-900 font-medium">Bachelor of Science in Computer Science</p>
+        <p className="text-gray-700 text-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {/* Second Education Entry */}
+  <div className="flex items-start mt-3">
+    <div className="flex items-start space-x-3">
+      <span className="text-gray-700 ml-20">2017 - 2019</span>
+      <div>
+        <p className="text-slate-900 font-medium">Diploma in Web Development</p>
+        <p className="text-gray-700 text-sm">
+          Phasellus euismod justo vitae ante cursus, at volutpat orci.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+{/* {work experience} */}
+  <div className="flex items-center mt-3">
+    <div className="bg-slate-900 ml-14 p-2 rounded-full flex items-center justify-center">
+      <FaBuildingColumns size={25} className="text-white" />
+    </div>
+    <h2 className="text-slate-900 mx-3 text-xl font-bold">WORK EXPERINCE</h2>
+  </div>
+  <div className="h-[2px] w-[470px] bg-slate-900 rounded-full mx-[107px] my-2"></div>
+
+  <div className="flex items-start ml-10 mt-5">
+    <div className="flex items-start space-x-3">
+      <span className="text-gray-700 ml-10">2017 - 2019</span>
+      <div>
+        <p className="text-slate-900 font-medium">WORK-1</p>
+        <p className="text-gray-700 text-sm w-[400px]">
+          Phasellus euismod justo vitae ante cursus, at volutpat orci.
+          Phasellus euismod justo vitae ante cursus, at volutpat orci.
+          at volutpat orci.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div className="flex items-start ml-10 mt-3">
+    <div className="flex items-start space-x-3">
+      <span className="text-gray-700 ml-10">2017 - 2019</span>
+      <div>
+        <p className="text-slate-900 font-medium">WORK-2</p>
+        <p className="text-gray-700 text-sm w-[400px]">
+          Phasellus euismod justo vitae ante cursus, at volutpat orci.
+          Phasellus euismod justo vitae ante cursus, at volutpat orci.
+          at volutpat orci.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div className="flex items-start ml-10 mt-3">
+    <div className="flex items-start space-x-3">
+      <span className="text-gray-700 ml-10">2017 - 2019</span>
+      <div>
+        <p className="text-slate-900 font-medium">WORK-3</p>
+        <p className="text-gray-700 text-sm w-[400px]">
+          Phasellus euismod justo vitae ante cursus, at volutpat orci.
+          Phasellus euismod justo vitae ante cursus, at volutpat orci.
+          at volutpat orci.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div className="flex items-start ml-10 mt-3">
+    <div className="flex items-start space-x-3">
+      <span className="text-gray-700 ml-10">2017 - 2019</span>
+      <div>
+        <p className="text-slate-900 font-medium">WORK-4</p>
+        <p className="text-gray-700 text-sm w-[400px]">
+          Phasellus euismod justo vitae ante cursus, at volutpat orci.
+          Phasellus euismod justo vitae ante cursus, at volutpat orci.
+          at volutpat orci.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  {/* Skill section */}
+<div className="flex items-center mt-0">
+  <div className="bg-slate-900 ml-14 p-2 rounded-full flex items-center justify-center">
+    <FaCog size={25} className="text-white" />
+  </div>
+  <h2 className="text-slate-900 mx-3 text-xl font-bold">SKILL</h2>
+</div>
+<div className="h-[2px] w-[470px] bg-slate-900 rounded-full mx-[107px] my-2"></div>
+
+<div className="text-slate-900 font-thin ml-14 text-base w-[200px]">
+  <div className="flex justify-between">
+  
+    {/* Software Section */}
+    <div className="">
+      <h2 className="font-medium">SOFTWARE</h2>
+      <div className="h-[2px] w-[210px] bg-slate-900 rounded-full my-2"></div>
+      <ul className="mt-3 w-[210px]">
+        <li>Adobe Photoshop</li>
+        <div className="flex-grow mr-5">
+          <div className="relative h-2 w-[210px] bg-slate-300 rounded-xl">
+            <div className="absolute bg-slate-900 rounded-xl h-full w-[92%]"></div>
+          </div>
+        </div>
+        <li className="mt-3">Microsoft Excel</li>
+        <div className="flex-grow mr-5">
+          <div className="relative h-2 w-[210px] bg-slate-300 rounded-xl">
+            <div className="absolute bg-slate-900 rounded-xl h-full w-[87%]"></div>
+          </div>
+        </div>
+        <li className="mt-3">Slack</li>
+        <div className="flex-grow mr-5">
+          <div className="relative h-2 w-[210px] bg-slate-300 rounded-xl">
+            <div className="absolute bg-slate-900 rounded-xl h-full w-[65%]"></div>
+          </div>
+        </div>
+      </ul>
+      
+      <h2 className="font-medium mt-16">LANGUAGE</h2>
+      <div className="h-[2px] w-[170px] bg-slate-900 rounded-full my-2"></div>
+      <ul>
+        <li className="mt-3">Urdu</li>
+        <div className="flex-grow mr-5">
+          <div className="relative h-2 w-[210px] bg-slate-300 rounded-xl">
+            <div className="absolute bg-slate-900 rounded-xl h-full w-[95%]"></div>
+          </div>
+        </div>
+        <li className="mt-3">English</li>
+        <div className="flex-grow mr-5">
+          <div className="relative h-2 w-[210px] bg-slate-300 rounded-xl">
+            <div className="absolute bg-slate-900 rounded-xl h-full w-[90%]"></div>
+          </div>
+        </div>
+      </ul>
+    </div>
+
+ {/* Skills Section */}
+  <div className=" ml-20">
+    <h2 className="font-medium text-slate-900 text-xl">Skills</h2>
+    <div className="h-[2px] w-full bg-slate-900 rounded-full my-2"></div>
+    <ul className="text-slate-900 text-base font-thin w-[210px] mt-5">
+      <li className="mt-3">Data Analysis</li>
+      <div className="flex-grow mr-5">
+        <div className="relative h-2 w-[210px] bg-slate-300 rounded-xl">
+          <div className="absolute bg-slate-900 rounded-xl h-full w-[94%]"></div>
+        </div>
+      </div>
+      <li className="mt-3">Machine Learning</li>
+      <div className="flex-grow mr-5">
+        <div className="relative h-2 w-[210px] bg-slate-300 rounded-xl">
+          <div className="absolute bg-slate-900 rounded-xl h-full w-[82%]"></div>
+        </div>
+      </div>
+      <li className="mt-3">Web Development</li>
+      <div className="flex-grow mr-5">
+        <div className="relative h-2 w-[210px] bg-slate-300 rounded-xl">
+          <div className="absolute bg-slate-900 rounded-xl h-full w-[75%]"></div>
+        </div>
+      </div>
+      <li className="mt-3">Graphic Design</li>
+      <div className="flex-grow mr-5">
+        <div className="relative h-2 w-[210px] bg-slate-300 rounded-xl">
+          <div className="absolute bg-slate-900 rounded-xl h-full w-[71%]"></div>
+        </div>
+      </div>
+      <li className="mt-3">Project Management</li>
+      <div className="flex-grow mr-5">
+        <div className="relative h-2 w-[210px] bg-slate-900 rounded-xl">
+          <div className="absolute bg-slate-900 rounded-xl h-full w-[60%]"></div>
+        </div>
+      </div>
+      <li className="mt-3">Digital Marketing</li>
+      <div className="flex-grow mr-5">
+        <div className="relative h-2 w-[210px] bg-slate-300 rounded-xl">
+          <div className="absolute bg-slate-900 rounded-xl h-full w-[55%]"></div>
+        </div>
+      </div>
+      <li className="mt-3">Cloud Computing</li>
+      <div className="flex-grow mr-5">
+        <div className="relative h-2 w-[210px] bg-slate-300 rounded-xl">
+          <div className="absolute bg-slate-900 rounded-xl h-full w-[50%]"></div>
+        </div>
+      </div>
+    </ul>
+  </div>
+
+  </div>
+</div>
+
+
+
+ 
+</div>
+        </div>
+
+
+
+    </div>    
+     
   );
 }
